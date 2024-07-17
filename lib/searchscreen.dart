@@ -219,11 +219,16 @@ class AboutScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 8.0),
-            Text(
-              'Website: www.ourapp.com',
-              style: TextStyle(
-                fontSize: 16,
+            GestureDetector(
+              onTap: () async{
+                await launchURL('https://sahilparmar.my.canva.site'); // Launch Instagram profile link
+              },
+              child: Text(
+                'Website: www.sahilparmar.odoo.com',
+                style: TextStyle(
+                  fontSize: 16,
 
+                ),
               ),
             ),
             SizedBox(height: 16.0),
